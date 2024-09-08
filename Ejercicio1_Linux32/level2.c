@@ -6,7 +6,7 @@ int main(){
 	char buff1[20];
 
 
-    printf("Es imposible pasar el nivel sin saber la clave secreta >:) \n \n");
+    printf("Es imposible pasar el nivel sin saber la clave secreta  \n \n");
     printf("Insertar clave secreta: ");
 
 	strncpy(buff2, "ddddddddddddddd", 20);
@@ -29,10 +29,6 @@ int main(){
 		printf("Clave incorrecta\n \n");
         printf("Quizas puedes manipular la clave secreta desbordando la memoria...");
 	}
-
-    if(sizeof(buff1) == 100){
-        printf("MENSAJE SECRETO: Si lees esto es que estas analizando hexdump en busca de pistas, sigue asi!! Usa gdb para analizar la estructura de la pila :)\n");
-    }
 
 	raise(SIGINT);
 	return 0;
